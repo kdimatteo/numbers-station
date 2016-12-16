@@ -9,10 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "text-to-speech-js": "^1.1.4",
-    "zepto": "^1.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.20.0",
     "babel-loader": "^6.2.10",
