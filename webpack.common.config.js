@@ -1,5 +1,6 @@
 const path       = require('path')
 // const AppConfig  = require('./src/app-config');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -12,6 +13,11 @@ module.exports = {
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js'
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({template: 'src/index.html'}),
+  //   new ExtractTextPlugin('style.css', { allChunks: true }),
+  ],
 
   module: {
     loaders: [

@@ -1,15 +1,15 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpackMerge = require('webpack-merge'); 
 const commonConfig = require('./webpack.common.config.js');
 
 module.exports = webpackMerge(commonConfig, {
   
-  plugins: [
-    new HtmlWebpackPlugin({template: 'src/index.html'}),
-  //   new ExtractTextPlugin('style.css', { allChunks: true }),
-  ],
+  // plugins: [
+  //   new HtmlWebpackPlugin({template: 'src/index.html'}),
+  // //   new ExtractTextPlugin('style.css', { allChunks: true }),
+  // ],
 
   devServer: {
     port: 3000,
@@ -24,6 +24,6 @@ module.exports = webpackMerge(commonConfig, {
 
   },
 
-  devtool: "#eval-source-map"
+  // devtool: "#eval-source-map"
 
 });
